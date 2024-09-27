@@ -1,0 +1,67 @@
+<script type="module">
+    document.querySelector('#btn-mac').addEventListener('click', function(e) {
+      window.open('https://www.apple.com/shop/buy-mac/macbook-pro')
+    })
+</script>
+
+<style>
+    .mac-new {
+        margin-top: 100px;
+        text-align: center;
+        font-size: 17px;
+        color: orange;
+    }
+
+    .mac-name {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .mac-title {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 55px;
+    }
+
+    .mac-price {
+        margin-top: 15px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .btn-mac-div {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    #btn-mac {
+        background-color: #6495ED;
+        color: white;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 20px;
+        margin-bottom: 100px;
+        transition: opacity 0.4s;
+        cursor: pointer;
+    }
+
+    #btn-mac:hover {
+        opacity: 0.8;
+    }
+
+    #btn-mac:active {
+        opacity: 0.4;
+    }
+</style>
+
+<p class="mac-new">New</p>
+<p class="mac-name">MacBook Pro</p>
+<p class="mac-title">Supercharged for pros.</p>
+<p class="mac-price">From &#36;1999</p>
+<div class="btn-mac-div"><button id="btn-mac">Buy</button></div>
