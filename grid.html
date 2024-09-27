@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Practise</title>
+</head>
+
+/* Grid is for 2D layout (rows AND columns) */
+
+<body style="padding-bottom: 1000px;">
+  <div style="display: grid; grid-template-columns: 100px 100px;">
+    <div style="background-color: rgb(228, 100, 100);">1</div>
+    <div style="background-color: rgb(100, 228, 100);">2 <p>text</p></div>
+  </div>
+
+  <div style="margin-top: 30px; display: grid; grid-template-columns: 100px 100px 200px;">
+    <div style="background-color: rgb(228, 100, 100);">100px</div>
+    <div style="background-color: rgb(100, 228, 100);">100px<p>text</p></div>
+    <div style="background-color: rgb(228, 100, 100);">200px</div>
+    <div style="background-color: rgb(100, 228, 100);">100px</div>
+  </div>
+
+  <div style="margin-top: 30px; display: grid; grid-template-columns: 100px 1fr;">
+    <div style="background-color: rgb(228, 100, 100);">100px</div>
+    <div style="background-color: rgb(100, 228, 100);">1fr</div>
+  </div>
+
+  <div style="margin-top: 30px; display: grid; grid-template-columns: 100px 1fr 2fr;">
+    <div style="background-color: rgb(228, 100, 100);">100px</div>
+    <div style="background-color: rgb(100, 228, 100);">1fr</div>
+    <div style="background-color: rgb(145, 138, 209);">2fr</div>
+  </div>
+
+  <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr 1fr; 
+  column-gap: 20px; row-gap: 40px;">
+    <div style="background-color: rgb(228, 100, 100); height: 200px;">1fr</div>
+    <div style="background-color: rgb(100, 228, 100); height: 200px;">1fr</div>
+    <div style="background-color: rgb(228, 100, 100); height: 200px;">1fr</div>
+    <div style="background-color: rgb(100, 228, 100); height: 200px;">1fr</div>
+    <div style="background-color: rgb(228, 100, 100); height: 200px;">1fr</div>
+    <div style="background-color: rgb(100, 228, 100); height: 200px;">1fr</div>
+  </div>
+
+  <div style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; 
+  column-gap: 20px; row-gap: 10px;">
+    <div style="background-color: rgb(236, 147, 234);">col1</div>
+    <div style="background-color: rgb(236, 147, 234);">col2</div>
+    <div style="background-color: rgb(236, 147, 234);">col3</div>
+    <div style="background-color: rgb(236, 147, 234);">col4</div>
+    <div style="background-color: rgb(236, 147, 234);">col1</div>
+    <div style="background-color: rgb(236, 147, 234);">col2</div>
+    <div style="background-color: rgb(236, 147, 234);">col3</div>
+    <div style="background-color: rgb(236, 147, 234);">col4</div>
+  </div>
+</body>
+
+</html>
