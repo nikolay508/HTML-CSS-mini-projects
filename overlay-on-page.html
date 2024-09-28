@@ -1,0 +1,62 @@
+<style>
+    .overlay{
+      display: flex; 
+      flex-direction: row;
+      background-color: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal{
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 500px;
+      height: 145px;
+    }
+
+    .modal h1{
+      font-family: Arial;
+      margin-left: 5px;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .modal p{
+      font-family: Arial;
+      margin-left: 6px;
+      margin-top: 20px;
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    .modal button{
+      background-color: rgb(240, 239, 239);
+      color: black;
+      margin-top: 20px;
+      margin-left: 6px;
+      border-width: 1.7px;
+      border-style: solid;
+      border-color: rgb(114, 114, 114);
+      border-radius: 3px;
+      font-size: 17px;
+      padding-top: 3px;
+      font-family: Arial;
+      height: 28px;
+      width: 62px;
+      cursor: pointer;
+    }
+</style>
+
+  <div class="overlay">
+    <div class="modal">
+      <h1>Modal title</h1>
+      <p>This is a modal</p>
+      <button id="closed-btn">Close</button>
+    </div>
+  </div>
